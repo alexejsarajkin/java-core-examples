@@ -1,4 +1,4 @@
-package com.examples.hash;
+package com.core.example.hash;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;

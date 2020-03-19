@@ -1,4 +1,4 @@
-package com.examples.string;
+package com.core.example.string;
 
 public class StringBufferVsStringBuilderTestPerformance {
 

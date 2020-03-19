@@ -1,4 +1,4 @@
-package com.examples.hash;
+package com.core.example.hash;
 
 import java.security.Security;
 import java.util.UUID;

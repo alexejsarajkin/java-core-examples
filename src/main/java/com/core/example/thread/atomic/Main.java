@@ -1,4 +1,4 @@
-package com.examples.thread.atomic;
+package com.core.example.thread.atomic;
 
 public class Main {
   public static void main(String[] args) throws Exception {

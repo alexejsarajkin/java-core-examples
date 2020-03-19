@@ -1,4 +1,4 @@
-package com.examples.datetime;
+package com.core.example.datetime;
 
 import java.text.DateFormat;
 import java.text.ParseException;

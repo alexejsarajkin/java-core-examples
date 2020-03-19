@@ -1,4 +1,4 @@
-package com.examples.hash;
+package com.core.example.hash;
 
 import java.security.MessageDigest;
 import java.security.Security;
