@@ -2,7 +2,7 @@ package com.oca;
 
 public class MainAlphaNoLegal {
   public static void main(String[] args) {
-    Beta beta = new Beta();
+    TestDoStuffBeta testDoStuffBeta = new TestDoStuffBeta();
   }
 }
 

@@ -15,9 +15,23 @@ package com.codewars.kyu7;
   rowSumOddNumbers(2); // 3 + 5 = 8
 */
 
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+
 public class SumOfOddNumbers {
   public static void main(String[] args) {
-    int n = 42;
-    System.out.println(n * n * n);
+    System.out.println(sumOfOddNumbers(42));
+  }
+
+  private static int sumOfOddNumbers(int n){
+    return n * n * n;
+  }
+
+  @Test
+  public void sumOfOddNumbersTest(){
+    assertEquals(1, sumOfOddNumbers(1));
+    assertEquals(8, sumOfOddNumbers(2));
+    assertEquals(74088, sumOfOddNumbers(42));
   }
 }

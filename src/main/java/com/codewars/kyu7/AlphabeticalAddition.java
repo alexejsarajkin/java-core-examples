@@ -24,10 +24,10 @@ import static org.junit.Assert.assertEquals;
 
 public class AlphabeticalAddition {
   public static void main(String[] args) {
-    addLetters("y", "c", "b");
+    alphabeticalAddition("y", "c", "b");
   }
 
-  public static String addLetters(String... letters) {
+  public static String alphabeticalAddition(String... letters) {
     String[] given = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
     int resultPosition = given.length;
 
@@ -49,13 +49,13 @@ public class AlphabeticalAddition {
 
   @Test
   public void fixedTests() {
-    assertEquals("f", addLetters("a", "b", "c"));
-    assertEquals("z", addLetters("z"));
-    assertEquals("c", addLetters("a", "b"));
-    assertEquals("c", addLetters("c"));
-    assertEquals("a", addLetters("z", "a"));
-    assertEquals("d", addLetters("y", "c", "b"));
-    assertEquals("z", addLetters());
+    assertEquals("f", alphabeticalAddition("a", "b", "c"));
+    assertEquals("z", alphabeticalAddition("z"));
+    assertEquals("c", alphabeticalAddition("a", "b"));
+    assertEquals("c", alphabeticalAddition("c"));
+    assertEquals("a", alphabeticalAddition("z", "a"));
+    assertEquals("d", alphabeticalAddition("y", "c", "b"));
+    assertEquals("z", alphabeticalAddition());
   }
 }
 
