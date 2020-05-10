@@ -10,7 +10,7 @@ public class Propagate {
   }
 
   private static String reverse(String s) throws Exception {
-    if (s.length() == 0){
+    if (s.length() == 0) {
       throw new Exception("test");
     }
 

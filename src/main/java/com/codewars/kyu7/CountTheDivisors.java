@@ -18,7 +18,7 @@ import static org.junit.Assert.assertEquals;
 
 public class CountTheDivisors {
   public static void main(String[] args) {
-    System.out.println( countOfDivisors(4));
+    System.out.println(countOfDivisors(4));
   }
 
   private static int countOfDivisors(int n) {
@@ -33,7 +33,7 @@ public class CountTheDivisors {
   }
 
   @Test
-  public void numberOfDivisorsTest(){
+  public void numberOfDivisorsTest() {
     assertEquals(3, countOfDivisors(4));
     assertEquals(2, countOfDivisors(5));
     assertEquals(6, countOfDivisors(12));

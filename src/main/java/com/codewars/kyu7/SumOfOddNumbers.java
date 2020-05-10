@@ -24,12 +24,12 @@ public class SumOfOddNumbers {
     System.out.println(sumOfOddNumbers(42));
   }
 
-  private static int sumOfOddNumbers(int n){
+  private static int sumOfOddNumbers(int n) {
     return n * n * n;
   }
 
   @Test
-  public void sumOfOddNumbersTest(){
+  public void sumOfOddNumbersTest() {
     assertEquals(1, sumOfOddNumbers(1));
     assertEquals(8, sumOfOddNumbers(2));
     assertEquals(74088, sumOfOddNumbers(42));

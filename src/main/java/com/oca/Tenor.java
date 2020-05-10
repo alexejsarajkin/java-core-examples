@@ -1,7 +1,7 @@
 package com.oca;
 
 class Singer {
-  public static String sing(){
+  public static String sing() {
     return "1a";
   }
 }

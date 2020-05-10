@@ -13,7 +13,7 @@ public class Retread extends Tire {
     new Retread().doStuff();
   }
 
-    void doStuff() {
+  void doStuff() {
 //  void doStuff() throws MyException {
 //  void doStuff() throws Exception{
 //  void doStuff() throws RuntimeException{

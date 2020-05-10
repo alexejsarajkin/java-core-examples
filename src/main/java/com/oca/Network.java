@@ -7,7 +7,7 @@ public class Network {
   Network(int x, Network n) {
     id = x;
     p = this;
-    if (n !=null){
+    if (n != null) {
       p = n;
     }
   }

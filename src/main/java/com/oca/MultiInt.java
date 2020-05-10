@@ -1,11 +1,15 @@
 package com.oca;
 
 interface I1 {
-  default int doStuff() {return 1;}
+  default int doStuff() {
+    return 1;
+  }
 }
 
 interface I2 {
-  default int doStuff() {return 2;}
+  default int doStuff() {
+    return 2;
+  }
 }
 
 public class MultiInt implements I1, I2 {

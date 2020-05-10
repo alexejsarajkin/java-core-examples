@@ -9,7 +9,8 @@ public class CheckGC {
     System.out.println("Before memory " + runtime.freeMemory());
 
     Date d = null;
-    for (int i = 0; i< 10000; i++); {
+    for (int i = 0; i < 10000; i++) ;
+    {
       d = new Date();
       d = null;
     }
