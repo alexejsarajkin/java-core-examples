@@ -1,8 +1,5 @@
 package com.oca;
 
-class MyException extends Exception {
-}
-
 class Tire {
   void doStuff() {
   }
