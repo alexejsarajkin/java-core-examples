@@ -6,6 +6,6 @@ public class TestXcom {
   public static void main(String[] args) {
     Xcomb b = new Xcomb();
     b.doB();
-//    b.doA();
+//    b.go();
   }
 }
