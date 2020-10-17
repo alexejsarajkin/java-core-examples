@@ -5,46 +5,46 @@ import java.util.List;
 
 public class Engine {
 
-  private double volume;
-  private EngineType engineType;
-  private int power;
-  private List<Piston> pistons = new ArrayList<>();
+	private double volume;
+	private EngineType engineType;
+	private int power;
+	private List<Piston> pistons = new ArrayList<>();
 
-  public Engine() {
-  }
+	public Engine() {
+	}
 
-  public Engine(double volume, EngineType engineType, int power) {
-    this.volume = volume;
-    this.engineType = engineType;
-    this.power = power;
+	public Engine(double volume, EngineType engineType, int power) {
+		this.volume = volume;
+		this.engineType = engineType;
+		this.power = power;
 
-    for (int i = 1; i < 4; i++) {
-      this.pistons.add(new Piston(0.3, i));
-    }
-  }
+		for (int i = 1; i < 4; i++) {
+			this.pistons.add(new Piston(0.3, i));
+		}
+	}
 
-  public double getVolume() {
-    return volume;
-  }
+	public double getVolume() {
+		return volume;
+	}
 
-  public EngineType getEngineType() {
-    return engineType;
-  }
+	public EngineType getEngineType() {
+		return engineType;
+	}
 
-  public int getPower() {
-    return power;
-  }
+	public int getPower() {
+		return power;
+	}
 
-  public List<Piston> getPistons() {
-    return pistons;
-  }
+	public List<Piston> getPistons() {
+		return pistons;
+	}
 
-  @Override
-  public String toString() {
-    return "Engine - " +
-        "volume = " + volume +
-        ", engineType = " + engineType +
-        ", power = " + power +
-        ", pistons = " + pistons;
-  }
+	@Override
+	public String toString() {
+		return "Engine - " +
+				"volume = " + volume +
+				", engineType = " + engineType +
+				", power = " + power +
+				", pistons = " + pistons;
+	}
 }

@@ -1,26 +1,26 @@
 package com.oca;
 
 class Alpha {
-  static String s = " ";
+	static String s = " ";
 
-  protected Alpha() {
-    s += "alpha ";
-  }
+	protected Alpha() {
+		s += "alpha ";
+	}
 }
 
 class SubAlpha extends Alpha {
-  private SubAlpha() {
-    s += "sub ";
-  }
+	private SubAlpha() {
+		s += "sub ";
+	}
 }
 
 public class SubSubAlpha extends Alpha {
-  private SubSubAlpha() {
-    s += "subsub ";
-  }
+	private SubSubAlpha() {
+		s += "subsub ";
+	}
 
-  public static void main(String[] args) {
-    new SubSubAlpha();
-    System.out.println(s);
-  }
+	public static void main(String[] args) {
+		new SubSubAlpha();
+		System.out.println(s);
+	}
 }

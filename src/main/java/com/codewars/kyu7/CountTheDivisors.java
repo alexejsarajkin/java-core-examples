@@ -17,26 +17,26 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class CountTheDivisors {
-  public static void main(String[] args) {
-    System.out.println(countOfDivisors(4));
-  }
+	public static void main(String[] args) {
+		System.out.println(countOfDivisors(4));
+	}
 
-  private static int countOfDivisors(int n) {
-    int count = 1;
+	private static int countOfDivisors(int n) {
+		int count = 1;
 
-    for (int i = 2; i <= n; i++) {
-      if (n % i == 0) {
-        count++;
-      }
-    }
-    return count;
-  }
+		for (int i = 2; i <= n; i++) {
+			if (n % i == 0) {
+				count++;
+			}
+		}
+		return count;
+	}
 
-  @Test
-  public void numberOfDivisorsTest() {
-    assertEquals(3, countOfDivisors(4));
-    assertEquals(2, countOfDivisors(5));
-    assertEquals(6, countOfDivisors(12));
-    assertEquals(8, countOfDivisors(30));
-  }
+	@Test
+	public void numberOfDivisorsTest() {
+		assertEquals(3, countOfDivisors(4));
+		assertEquals(2, countOfDivisors(5));
+		assertEquals(6, countOfDivisors(12));
+		assertEquals(8, countOfDivisors(30));
+	}
 }

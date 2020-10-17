@@ -20,18 +20,18 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class SumOfOddNumbers {
-  public static void main(String[] args) {
-    System.out.println(sumOfOddNumbers(42));
-  }
+	public static void main(String[] args) {
+		System.out.println(sumOfOddNumbers(42));
+	}
 
-  private static int sumOfOddNumbers(int n) {
-    return n * n * n;
-  }
+	private static int sumOfOddNumbers(int n) {
+		return n * n * n;
+	}
 
-  @Test
-  public void sumOfOddNumbersTest() {
-    assertEquals(1, sumOfOddNumbers(1));
-    assertEquals(8, sumOfOddNumbers(2));
-    assertEquals(74088, sumOfOddNumbers(42));
-  }
+	@Test
+	public void sumOfOddNumbersTest() {
+		assertEquals(1, sumOfOddNumbers(1));
+		assertEquals(8, sumOfOddNumbers(2));
+		assertEquals(74088, sumOfOddNumbers(42));
+	}
 }

@@ -5,23 +5,23 @@ import java.util.UUID;
 
 public class TestSpeedPerformance {
 
-  private static final int TIMES = 1_000_000;
-  private static final String UUID_STRING = UUID.randomUUID().toString();
+	private static final int TIMES = 1_000_000;
+	private static final String UUID_STRING = UUID.randomUUID().toString();
 
-  public static void main(String[] args) {
-    long start = 0;
+	public static void main(String[] args) {
+		long start = 0;
 
-    for (String algorithm : Security.getAlgorithms("MessageDigest")) {
-      start = System.currentTimeMillis();
+		for (String algorithm : Security.getAlgorithms("MessageDigest")) {
+			start = System.currentTimeMillis();
 
-      for (int i = 0; i < TIMES; i++) {
-        Main.getHash(UUID_STRING.getBytes(), algorithm);
-      }
+			for (int i = 0; i < TIMES; i++) {
+				Main.getHash(UUID_STRING.getBytes(), algorithm);
+			}
 
-      System.out.println("Algorithm: " + algorithm + " Value: " + Main.getHash(UUID_STRING.getBytes(), algorithm));
-      System.out.println("Algorithm: " + algorithm + " calculate time " + (System.currentTimeMillis() - start) + " ms");
-    }
-  }
+			System.out.println("Algorithm: " + algorithm + " Value: " + Main.getHash(UUID_STRING.getBytes(), algorithm));
+			System.out.println("Algorithm: " + algorithm + " calculate time " + (System.currentTimeMillis() - start) + " ms");
+		}
+	}
 }
 
 // Hash sizes

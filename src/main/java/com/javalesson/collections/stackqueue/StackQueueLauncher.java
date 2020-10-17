@@ -1,26 +1,22 @@
 package com.javalesson.collections.stackqueue;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.Stack;
-
 import com.javalesson.collections.collectionclass.Card;
 import com.javalesson.collections.collectionclass.CardComparator;
 
+import java.util.*;
+
 public class StackQueueLauncher {
 
-  public static void main(String[] args) {
+	public static void main(String[] args) {
 //        passengerProcessing();
 
 //        Queue<Card> queue = new PriorityQueue<>();
-    Queue<Card> queue = new PriorityQueue<>(52, new CardComparator()); // С компаратором
-    for (Card.Face face : Card.Face.values()) {
-      for (Card.Suit suit : Card.Suit.values()) {
-        queue.offer(new Card(suit, face));
-      }
-    }
+		Queue<Card> queue = new PriorityQueue<>(52, new CardComparator()); // С компаратором
+		for (Card.Face face : Card.Face.values()) {
+			for (Card.Suit suit : Card.Suit.values()) {
+				queue.offer(new Card(suit, face));
+			}
+		}
 
 //        System.out.println("Queue -------------- ");
 //        System.out.println("Deck size is " + queue.size());
@@ -36,63 +32,63 @@ public class StackQueueLauncher {
 //            System.out.println(iterator.next());
 //        }
 
-    System.out.println("Deque -------------- ");
-    Deque<Card> cards = new ArrayDeque<>();
-    for (int i = 0; i < 10; i++) {
-      cards.offerLast(queue.poll());
-    }
+		System.out.println("Deque -------------- ");
+		Deque<Card> cards = new ArrayDeque<>();
+		for (int i = 0; i < 10; i++) {
+			cards.offerLast(queue.poll());
+		}
 
-    for (int i = 0; i < 10; i++) {
-      System.out.println(cards.pollLast());
-    }
-  }
+		for (int i = 0; i < 10; i++) {
+			System.out.println(cards.pollLast());
+		}
+	}
 
-  private static void passengerProcessing() {
-    Stack<Passenger> bus = new Stack<>();
-    Passenger passenger = new Passenger("Katerina", "Ivanova");
-    bus.push(new Passenger("Alex", "Vasko"));
-    bus.push(new Passenger("Viktor", "Mikhailov"));
-    bus.push(new Passenger("Dmitrii", "Petrov"));
-    bus.push(passenger);
-    bus.push(new Passenger("Ivan", "Ivanov"));
+	private static void passengerProcessing() {
+		Stack<Passenger> bus = new Stack<>();
+		Passenger passenger = new Passenger("Katerina", "Ivanova");
+		bus.push(new Passenger("Alex", "Vasko"));
+		bus.push(new Passenger("Viktor", "Mikhailov"));
+		bus.push(new Passenger("Dmitrii", "Petrov"));
+		bus.push(passenger);
+		bus.push(new Passenger("Ivan", "Ivanov"));
 
-    System.out.println("Passenger found at position " + bus.search(passenger));
+		System.out.println("Passenger found at position " + bus.search(passenger));
 
-    System.out.println("Last entered passenger is " + bus.peek());
+		System.out.println("Last entered passenger is " + bus.peek());
 
-    while (!bus.empty()) {
-      System.out.println("Passenger is " + bus.pop());
-    }
+		while (!bus.empty()) {
+			System.out.println("Passenger is " + bus.pop());
+		}
 
-  }
+	}
 
-  private static class Passenger {
+	private static class Passenger {
 
-    private static int number = 1;
-    private String name;
-    private String surname;
+		private static int number = 1;
+		private String name;
+		private String surname;
 
-    public Passenger(String name, String surname) {
-      number++;
-      this.name = name;
-      this.surname = surname;
-    }
+		public Passenger(String name, String surname) {
+			number++;
+			this.name = name;
+			this.surname = surname;
+		}
 
-    public int getNumber() {
-      return number;
-    }
+		public int getNumber() {
+			return number;
+		}
 
-    public String getName() {
-      return name;
-    }
+		public String getName() {
+			return name;
+		}
 
-    public String getSurname() {
-      return surname;
-    }
+		public String getSurname() {
+			return surname;
+		}
 
-    @Override
-    public String toString() {
-      return "Passenger " + name + " " + surname;
-    }
-  }
+		@Override
+		public String toString() {
+			return "Passenger " + name + " " + surname;
+		}
+	}
 }
