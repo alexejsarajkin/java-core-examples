@@ -101,8 +101,8 @@ public class Main {
 		System.out.println("Minutes between two time zone: " + minutes);
 
 		// Get available zines
-//    for (String zone: ZoneId.getAvailableZoneIds()) {
-//      System.out.println(zone);
-//    }
+		for (String zone : ZoneId.getAvailableZoneIds()) {
+			System.out.println(zone);
+		}
 	}
 }
