@@ -3,6 +3,7 @@ package com.oca.packTwo;
 import com.oca.packOne.ClassA;
 
 public class ClassC extends ClassA {
+	
 	public static void main(String[] args) {
 //        ClassC obj = new ClassC();
 		ClassA obj = new ClassC();

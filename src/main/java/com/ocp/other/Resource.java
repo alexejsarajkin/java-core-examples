@@ -7,9 +7,10 @@ import java.util.Properties;
 
 public class Resource {
 	public static void main(String[] args) {
-		workWithSystemProperties();
-		createOwnProperty();
-		copyOwnProperty();
+//		workWithSystemProperties();
+//		createOwnProperty();
+//		copyOwnProperty();
+//		readProperty("myProps1.props");
 		readProperty("myTest.props");
 	}
 

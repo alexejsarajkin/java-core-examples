@@ -1,12 +1,26 @@
 package com;
 
-import java.math.BigDecimal;
-import java.text.DecimalFormat;
 
-public class Main {
+import java.util.stream.Stream;
+
+public class Main implements Two {
+
 	public static void main(String[] args) {
-		String str = "15681884330";
-		System.out.println(new BigDecimal("15681884330"));
-		System.out.println(new DecimalFormat("#").format(new BigDecimal("15681884330")));
+//		Stream<Integer>.of(1,2).count();      // n1
+		Stream.<Integer>of(1, 2).count();      // n2
+//		Stream.<>of(1,2).count();             // n3
+		Stream.of(1, 2).count();               // n4
+
 	}
+
+
+}
+
+interface One{
+	void run();
+}
+
+interface Two extends One{
+	@Override
+	default void run(){}
 }
