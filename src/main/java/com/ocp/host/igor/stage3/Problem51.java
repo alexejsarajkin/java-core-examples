@@ -1,5 +1,6 @@
 package com.ocp.host.igor.stage3;
 
+import java.util.function.Function;
 import java.util.function.ToIntFunction;
 
 public class Problem51 {

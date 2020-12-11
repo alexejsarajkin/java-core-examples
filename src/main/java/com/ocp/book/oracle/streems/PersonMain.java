@@ -49,7 +49,7 @@ public class PersonMain {
 				));
 		System.out.println(counting);
 
-		System.out.println("-------------");
+		System.out.println("------------- mapping");
 
 		Map<Integer, List<String>> namesByAge = personList.stream()
 				.collect(
@@ -63,7 +63,7 @@ public class PersonMain {
 				);
 		System.out.println(namesByAge);
 
-		System.out.println("-------------");
+		System.out.println("------------- partitioningBy");
 
 		Map<Boolean, List<Person>> partitionOlder34 = personList.stream()
 				.collect(

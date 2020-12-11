@@ -9,7 +9,8 @@ public class Problem6 {
 		Future f1 = exec.submit(new Caller("Call "));
 		Future f2 = exec.submit(new Runner("Run "));
 		String str1 = (String) f1.get();
-		String str2 = (String) f2.get();         
+		String str2 = (String) f2.get();
+//		exec.shutdown();
 		System.out.println(str1 + " : " + str2);
 	}
 

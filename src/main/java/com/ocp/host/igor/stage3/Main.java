@@ -1,16 +1,30 @@
 package com.ocp.host.igor.stage3;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.sql.Statement;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class Main {
-	public static void main(String[] args) {
-//		BiFunction<Integer, Double, Integer> value = (p1, p2) -> p1 + p2;   // line n1
-//		System.out.println(value.apply(1, 1.5));                            // line n2
+    public static void main(String[] args) {
+        Deque<Integer> nums = new ArrayDeque<>();
+        nums.add(1000);
+        nums.push(2000);
+        nums.add(3000);
+        nums.push(4000);
+        Integer i1 = nums.remove();
+        Integer i2 = nums.pop();
+        System.out.println(i1);
+        System.out.println(i2);
 
-//		List<Integer> numbers = Arrays.asList(1, 2, 3);
-//		long count = numbers.stream()
-//				.map(num -> num * 2)                //line n1
-//				.peek(System.out::print)          //line n2
-//				.count();
 
 
-	}
+        System.out.println(Integer.min(13,6));
+    }
 }

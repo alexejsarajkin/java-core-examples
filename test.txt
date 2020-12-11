@@ -1,1 +1,1 @@
-Math::max
+Course::Java

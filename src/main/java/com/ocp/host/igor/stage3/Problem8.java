@@ -15,7 +15,7 @@ public class Problem8 implements Runnable {
 	public void run() {System.out.println(fileName);}
 	public static void main (String[] args) throws IOException, InterruptedException {
 		ExecutorService exec = Executors.newCachedThreadPool();
-		Stream<Path> listOfFiles = Files.walk(Paths.get("C:\\Try_Java"));
+		Stream<Path> listOfFiles = Files.walk(Paths.get("/users"));
 		listOfFiles.forEach(e -> {
 			exec.execute(new Problem8(e.getFileName().toString()));          // line n1
 		});

@@ -1,5 +1,8 @@
 package com.ocp.host.igor.stage3;
 
+import java.util.Optional;
+import java.util.stream.Stream;
+
 public class Problem100 {
 	public static void main(String[] args) {
 		String str = "I been a idiot since I was born. My IQ is near 70, which qualifies me, so they say.";   // line n1
