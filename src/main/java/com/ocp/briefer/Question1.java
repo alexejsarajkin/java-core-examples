@@ -1,7 +1,10 @@
 package com.ocp.briefer;
 
 public class Question1 {
-
+    public static void main(String[] args) throws UserException {
+        App t = new App();
+        t.doRegister("Mathew", 60);
+    }
 }
 
 class UserException extends Exception {
@@ -20,10 +23,5 @@ class App {
         } else {
             System.out.println("User is registered.");
         }
-    }
-
-    public static void main(String[] args) throws UserException {
-        App t = new App();
-        t.doRegister("Mathew", 60);
     }
 }

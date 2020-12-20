@@ -2,26 +2,26 @@ package com.ocp.book.selikoff_boyarsky.review.ch1;
 
 public enum Q17 {
 
-	MAMMAL(true),
-	FISH(Boolean.FALSE),
+    MAMMAL(true),
+    FISH(Boolean.FALSE),
 
-	BIRD(false),
+    BIRD(false),
 
-	REPTILE(false),AMPHIBIAN(false),
+    REPTILE(false), AMPHIBIAN(false),
 
-	INVERTEBRATE(false);
+    INVERTEBRATE(false);
 
-	boolean hasHair;
+    boolean hasHair;
 
-	private Q17(boolean hasHair) {
-		this.hasHair = hasHair;
-	}
+    private Q17(boolean hasHair) {
+        this.hasHair = hasHair;
+    }
 
-	public boolean hasHair() {
-		return hasHair;
-	}
+    public boolean hasHair() {
+        return hasHair;
+    }
 
-	public void giveWig() {
-		hasHair = true;
-	}
+    public void giveWig() {
+        hasHair = true;
+    }
 }

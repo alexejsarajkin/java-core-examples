@@ -1,13 +1,13 @@
 package com.ocp.book.oracle.lambda;
 
 public class DogPlay {
-	DogQuerier dogQuerier;
+    DogQuerier dogQuerier;
 
-	public DogPlay(DogQuerier dogQuerier) {
-		this.dogQuerier = dogQuerier;
-	}
+    public DogPlay(DogQuerier dogQuerier) {
+        this.dogQuerier = dogQuerier;
+    }
 
-	public boolean doQuery(Dog d) {
-		return dogQuerier.test(d);
-	}
+    public boolean doQuery(Dog d) {
+        return dogQuerier.test(d);
+    }
 }

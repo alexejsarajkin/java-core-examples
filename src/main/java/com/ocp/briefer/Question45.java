@@ -10,10 +10,10 @@ public class Question45 {
 
     public static Connection getDBConnection() throws SQLException {
         String URL = "1";
-        String userName= "1";
-        String passWord= "1";
+        String username= "1";
+        String password= "1";
 
-        try (Connection con = DriverManager.getConnection(URL, userName, passWord)) {
+        try (Connection con = DriverManager.getConnection(URL, username, password)) {
             newConnection = con;
         }
         return newConnection;

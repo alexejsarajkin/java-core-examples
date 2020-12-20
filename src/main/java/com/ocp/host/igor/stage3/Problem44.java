@@ -29,7 +29,7 @@ class Jerry extends Thread {
 	}
 }
 
-class Tom implements Runnable { 
+class Tom implements Runnable {
 	public void run() {
 		System.out.println("Tom chasing");
 	}

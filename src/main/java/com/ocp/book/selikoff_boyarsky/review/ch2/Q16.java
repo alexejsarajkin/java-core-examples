@@ -4,8 +4,8 @@ public class Q16 {
 }
 
 
- interface Herbivore {
-	int amount = 10;
+interface Herbivore {
+    int amount = 10;
 
 //	public static void eatGrass();
 //

@@ -7,12 +7,12 @@ public class Question15 {
     public static void main(String[] args) throws Exception {
         try {
             String URL = "1";
-            String userName= "1";
-            String passWord= "1";
-            Connection conn = DriverManager.getConnection(URL, userName, passWord);
+            String username= "1";
+            String password= "1";
+            Connection conn = DriverManager.getConnection(URL, username, password);
             Statement st = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_UPDATABLE);
-//            st.execute("SELECT * FROM Employee");
+            st.execute("SELECT * FROM Employee");
             ResultSet rs = st.getResultSet();
             while (rs.next()) {
                 if (rs.getInt(1) == 112) {

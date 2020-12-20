@@ -13,3 +13,5 @@ public class Question22 {
                 .peek(System.out::print);
     }
 }
+
+// The program prints nothing.

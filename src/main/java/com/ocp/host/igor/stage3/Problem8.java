@@ -10,16 +10,23 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 
 public class Problem8 implements Runnable {
-	String fileName;
-	public Problem8(String fileName) { this.fileName = fileName; }
-	public void run() {System.out.println(fileName);}
-	public static void main (String[] args) throws IOException, InterruptedException {
-		ExecutorService exec = Executors.newCachedThreadPool();
-		Stream<Path> listOfFiles = Files.walk(Paths.get("/users"));
-		listOfFiles.forEach(e -> {
-			exec.execute(new Problem8(e.getFileName().toString()));          // line n1
-		});
-		exec.shutdown();
-		exec.awaitTermination(365, TimeUnit.DAYS);                       // line n2
-	}
+    String fileName;
+
+    public Problem8(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public void run() {
+        System.out.println(fileName);
+    }
+
+    public static void main(String[] args) throws IOException, InterruptedException {
+        ExecutorService exec = Executors.newCachedThreadPool();
+        Stream<Path> listOfFiles = Files.walk(Paths.get("/users"));
+        listOfFiles.forEach(e -> {
+            exec.execute(new Problem8(e.getFileName().toString()));          // line n1
+        });
+        exec.shutdown();
+        exec.awaitTermination(365, TimeUnit.DAYS);                       // line n2
+    }
 }

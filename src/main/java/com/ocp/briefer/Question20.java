@@ -2,7 +2,7 @@ package com.ocp.briefer;
 
 public class Question20 {
 //    public static void main(String[] args) throws FuelNotAvailException, Exception {
-//        Vehicle v = new SolarVehicle();
+//        Vehicle20 v = new SolarVehicle();
 //        v.ride();
 //    }
 }
@@ -10,13 +10,13 @@ public class Question20 {
 //class FuelNotAvailException extends Exception {
 //}
 //
-//class Vehicle {
+//class Vehicle20 {
 //    void ride() throws FuelNotAvailException { //line n1
 //        System.out.println("Happy Journey !");
 //    }
 //}
 //
-//class SolarVehicle extends Vehicle {
+//class SolarVehicle extends Vehicle20 {
 //    public void ride() throws Exception { //line n2
 //        super.ride();
 //    }
