@@ -1,35 +1,25 @@
 package com.ocp.examtopics;
 
 public class Question47 {
-}
-
-//final class Cream {
-class Cream {
-    public void prepare() {
+    public static void main(String[] args) {
+        USCurrency usCoin = USCurrency.DIME;
+        System.out.println(usCoin.getValue());
     }
 }
 
-class Cake extends Cream {
-    public void bake(int min, int temp) {
+enum USCurrency {
+    PENNY(1),
+    NICKLE(5),
+    DIME(10),
+    QUARTER(25);
+    private int value;
+
+    private USCurrency(int value) {
+        this.value = value;
     }
 
-    public void mix() {
-    }
-}
-
-class Shop {
-    private Cake c = new Cake();
-    private final double discount = 0.25;
-
-    public void makeReady() {
-        c.bake(10, 120);
-    }
-}
-
-class Bread extends Cake {
-    public void bake(int minutes, int temperature) {
-    }
-
-    public void addToppings() {
+    public int getValue() {
+        return value;
     }
 }
+

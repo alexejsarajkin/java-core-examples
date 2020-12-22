@@ -1,37 +1,27 @@
 package com.ocp.examtopics;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
 public class Question10 {
     public static void main(String[] args) {
-        Engine carEngine = new Engine();
-        carEngine.operate();
+        List<TechName> tech = Arrays.asList(
+                new TechName("Java-"),
+                new TechName("Oracle DB-"),
+                new TechName("J2EE-")
+        );
+
+        Stream<TechName> stre = tech.stream();
+
+        stre.map(a -> a.techName).forEach(System.out::print);
     }
 }
 
-abstract class Operator{
-//    protected void turnOn();
-//    protected void turnOff();
+class TechName {
+    String techName;
 
-    protected abstract void turnOn();
-    protected abstract void turnOff();
-}
-
-class EngineOperator extends Operator{
-    @Override
-    protected void turnOn() {
-        System.out.println("ON");
-    }
-
-    @Override
-    protected void turnOff() {
-        System.out.println("OFF");
-    }
-}
-
-class Engine {
-    Operator m = new EngineOperator();
-
-    public void operate(){
-        m.turnOn();
-        m.turnOff();
+    TechName(String techName) {
+        this.techName = techName;
     }
 }
