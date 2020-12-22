@@ -9,7 +9,7 @@ public class Question162 {
         List<Double> doubles = Arrays.asList(100.12, 200.32);
         DoubleFunction funD = d -> d + 100.0;
 //        doubles.stream().forEach(funD); // line n1
-//        doubles.stream().forEach(e -> System.out.println(e)); // line n2
+        doubles.stream().forEach(e -> System.out.println(e)); // line n2
     }
 }
 

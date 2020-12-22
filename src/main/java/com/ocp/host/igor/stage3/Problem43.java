@@ -9,33 +9,33 @@ public class Problem43 {
 				new Band("Yes", "Prog Rock", "UK"),
 				new Band("Boney M", "Euro Disco", "Germany"),
 				new Band("ELP", "Prog Rock", "UK"));
-		
-		bands.stream()
-				.collect(Collectors.groupingBy(Band::getStyle))
-				.forEach((x, y) -> System.out.println(x));
 
 		bands.stream()
 				.collect(Collectors.groupingBy(Band::getStyle))
-				.forEach( (String x, List<Band> y) -> System.out.println(x) );
+				.forEach((x, y) -> System.out.println(y));
 
+//		bands.stream()
+//				.collect(Collectors.groupingBy(Band::getStyle))
+//				.forEach( (String x, List<Band> y) -> System.out.println(x) );
 
-		bands.stream()
-				.collect(Collectors.groupingBy(
-						Band::getStyle,
-						HashMap<String, List<Band>>::new,
-						Collectors.toList()
-				))
-				.forEach((x, y) -> System.out.println(x));
+//
+//		bands.stream()
+//				.collect(Collectors.groupingBy(
+//						Band::getStyle,
+//						HashMap<String, List<Band>>::new,
+//						Collectors.toList()
+//				))
+//				.forEach((x, y) -> System.out.println(x));
 
-
-		bands.stream()
-				.collect(Collectors.groupingBy(
-						Band::getStyle,
-						() -> new TreeMap<String, List<Band>>(
-								Comparator.<String>reverseOrder()),
-						Collectors.toList()
-				))
-				.forEach( (String x, List<Band>y) -> System.out.println(x) );  // Prog Rock  \n  Euro Disco
+//
+//		bands.stream()
+//				.collect(Collectors.groupingBy(
+//						Band::getStyle,
+//						() -> new TreeMap<String, List<Band>>(
+//								Comparator.<String>reverseOrder()),
+//						Collectors.toList()
+//				))
+//				.forEach( (String x, List<Band>y) -> System.out.println(x) );  // Prog Rock  \n  Euro Disco
 	}
 }
 

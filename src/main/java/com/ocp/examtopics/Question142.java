@@ -1,9 +1,6 @@
 package com.ocp.examtopics;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Question142 {
@@ -14,6 +11,7 @@ public class Question142 {
         blockList.add(new Block("Blue", 12));
         Collections.sort(blockList, new ColorSorted());
         System.out.println(blockList);
+
     }
 }
 

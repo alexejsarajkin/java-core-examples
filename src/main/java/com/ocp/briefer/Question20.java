@@ -21,3 +21,5 @@ public class Question20 {
 //        super.ride();
 //    }
 //}
+
+// line 1 - protected void ride() throws Exception

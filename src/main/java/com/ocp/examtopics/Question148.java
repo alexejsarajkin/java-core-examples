@@ -6,6 +6,10 @@ import java.util.stream.Collectors;
 
 public class Question148 {
     public static void main(String[] args) {
+
+    }
+
+    private void run(){
         List<String> li = Arrays.asList("Dog", "Cat", "Mouse");
         Animal animal = new Animal();
         animal.setList(li.stream().collect(Collectors.toList()));

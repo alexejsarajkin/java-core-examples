@@ -13,4 +13,4 @@ public class Question111 {
     }
 }
 
-// An AssertionError is thrown.
+// New Price: 0.0

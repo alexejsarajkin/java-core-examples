@@ -23,4 +23,4 @@ interface LengthValidator{
     public boolean checkLength(String str);
 }
 
-//  Supplier
+//  Predicate

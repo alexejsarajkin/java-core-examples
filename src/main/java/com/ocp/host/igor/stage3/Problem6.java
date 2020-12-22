@@ -12,6 +12,7 @@ public class Problem6 {
         String str2 = (String) f2.get();
 //		exec.shutdown();
         System.out.println(str1 + " : " + str2);
+        exec.shutdown();
     }
 
     static class Caller implements Callable<String> {
