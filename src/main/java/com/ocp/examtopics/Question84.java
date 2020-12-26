@@ -4,12 +4,12 @@ public class Question84 {
 }
 
 //final class Cream {
-class Cream {
+class Cream84 {
     public void prepare() {
     }
 }
 
-class Cake extends Cream {
+class Cake84 extends Cream84 {
     public void bake(int min, int temp) {
     }
 
@@ -17,8 +17,8 @@ class Cake extends Cream {
     }
 }
 
-class Shop {
-    private Cake c = new Cake();
+class Shop84 {
+    private Cake84 c = new Cake84();
     private final double discount = 0.25;
 
     public void makeReady() {
@@ -26,7 +26,7 @@ class Shop {
     }
 }
 
-class Bread extends Cake {
+class Bread84 extends Cake84 {
     public void bake(int minutes, int temperature) {
     }
 

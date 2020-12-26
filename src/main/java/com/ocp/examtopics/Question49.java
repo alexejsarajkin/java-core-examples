@@ -10,7 +10,7 @@ public class Question49 {
         List<String> strs = Arrays.asList("Java", "Java EE", "Java ME");
         Predicate<String> cf1 = s -> s.length() > 3;
 
-        Predicate cf2 = new CourseFilter() {
+        Predicate cf2 = new CourseFilter49() {
             public boolean test(String s) {
                 return s.contains("Java");
             }
@@ -24,7 +24,7 @@ public class Question49 {
     }
 }
 
-interface CourseFilter extends Predicate<String> {
+interface CourseFilter49 extends Predicate<String> {
     public default boolean test(String str) {
         return str.equals("Java");
     }

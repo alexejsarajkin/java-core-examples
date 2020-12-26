@@ -2,28 +2,28 @@ package com.ocp.examtopics;
 
 public class Question62 {
     public static void main(String[] args) {
-        Foo<String, Integer> mark = new Foo<String, Integer>("Steve", 100);
+        Foo62<String, Integer> mark = new Foo62<String, Integer>("Steve", 100);
 
-        Foo<String, String> pair = Foo.<String>twice("Hello World!");
+        Foo62<String, String> pair = Foo62.<String>twice("Hello World!");
 
-        Foo<?, ?> percentage = new Foo<>(97, 32);
+        Foo62<?, ?> percentage = new Foo62<>(97, 32);
 
-        Foo<String, String> grade = new Foo<>("John", "A");
+        Foo62<String, String> grade = new Foo62<>("John", "A");
     }
 
 }
 
-class Foo<K, V> {
+class Foo62<K, V> {
     private K key;
     private V value;
 
-    public Foo(K key, V value) {
+    public Foo62(K key, V value) {
         this.key = key;
         this.value = value;
     }
 
-    public static <T> Foo<T, T> twice(T value) {
-        return new Foo<T, T>(value, value);
+    public static <T> Foo62<T, T> twice(T value) {
+        return new Foo62<T, T>(value, value);
     }
 
     public K getKey() {

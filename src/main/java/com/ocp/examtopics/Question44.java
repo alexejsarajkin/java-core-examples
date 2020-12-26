@@ -6,16 +6,16 @@ public class Question44 {
     public static void main(String[] args) {
         Address address = null;
         Optional<Address> addrs1 = Optional.ofNullable(address);
-        Employee e1 = new Employee(addrs1);
+        Employee44 e1 = new Employee44(addrs1);
         String eAddress = (addrs1.isPresent()) ? addrs1.get().getCity() : "City Not available";
         System.out.println(eAddress);
     }
 }
 
-class Employee {
+class Employee44 {
     Optional<Address> address;
 
-    Employee(Optional<Address> address) {
+    Employee44(Optional<Address> address) {
         this.address = address;
     }
 

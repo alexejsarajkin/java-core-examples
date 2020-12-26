@@ -5,16 +5,16 @@ import java.util.List;
 
 public class Question39 {
     public static void main(String[] args) {
-        List<Product> products = Arrays.asList(
-                new Product(1, 10),
-                new Product(2, 30),
-                new Product(2, 30));
+        List<Product39> products = Arrays.asList(
+                new Product39(1, 10),
+                new Product39(2, 30),
+                new Product39(2, 30));
 
-        Product p = products.stream().reduce(
-                new Product(4, 0),
+        Product39 p = products.stream().reduce(
+                new Product39(4, 0),
                 (p1, p2) -> {
                     p1.price += p2.price;
-                    return new Product(p1.id, p1.price);
+                    return new Product39(p1.id, p1.price);
                 });
 
 
@@ -27,11 +27,11 @@ public class Question39 {
     }
 }
 
-class Product {
+class Product39 {
     int id;
     int price;
 
-    public Product(int id, int price) {
+    public Product39(int id, int price) {
         this.id = id;
         this.price = price;
     }

@@ -6,13 +6,13 @@ import java.util.stream.Collectors;
 
 public class Question158 {
     public static void main(String[] args) {
-        List<Student> studentList = Arrays.asList(
-                new Student("Jessy", "Java ME", "Chicago"),
-                new Student("Helen", "Java EE", "Houston"),
-                new Student("Mark", "Java ME", "Chicago")
+        List<Student158> studentList = Arrays.asList(
+                new Student158("Jessy", "Java ME", "Chicago"),
+                new Student158("Helen", "Java EE", "Houston"),
+                new Student158("Mark", "Java ME", "Chicago")
         );
         studentList.stream()
-                .collect(Collectors.groupingBy(Student::getCourse))
+                .collect(Collectors.groupingBy(Student158::getCourse))
                 .forEach(
                         (src, res) -> System.out.println(src)
                 );
@@ -20,10 +20,10 @@ public class Question158 {
 
 }
 
-class Student {
+class Student158 {
     String course, name, city;
 
-    public Student(String name , String course, String city) {
+    public Student158(String name , String course, String city) {
         this.course = course;
         this.name = name;
         this.city = city;
