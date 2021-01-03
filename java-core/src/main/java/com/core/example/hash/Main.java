@@ -1,8 +1,9 @@
 package com.core.example.hash;
 
-import javax.xml.bind.DatatypeConverter;
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.Security;
+import java.util.Base64;
 import java.util.Set;
 import java.util.UUID;
 
@@ -24,7 +25,7 @@ public class Main {
 			MessageDigest messageDigest = MessageDigest.getInstance(algorithm);
 			messageDigest.update(inputBytes);
 			byte[] digestedBytes = messageDigest.digest();
-			hashValue = DatatypeConverter.printHexBinary(digestedBytes).toLowerCase();
+			hashValue = Base64.getEncoder().encodeToString(digestedBytes).toLowerCase();
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
