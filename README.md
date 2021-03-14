@@ -1,1 +1,1 @@
-# java-core-examples
+# java-examples
