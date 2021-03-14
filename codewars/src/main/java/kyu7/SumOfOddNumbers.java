@@ -1,4 +1,4 @@
-package com.codewars.kyu7;
+package kyu7;
 
 /*
   Given the triangle of consecutive odd numbers:

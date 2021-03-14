@@ -1,4 +1,4 @@
-package com.codewars.kyu7;
+package kyu7;
 
 /*
   Count the divisors of a number
@@ -12,7 +12,7 @@ package com.codewars.kyu7;
   numberOfDivisors(30) == 8 // 1, 2, 3, 5, 6, 10, 15, 30
  */
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import static org.junit.Assert.assertEquals;
 

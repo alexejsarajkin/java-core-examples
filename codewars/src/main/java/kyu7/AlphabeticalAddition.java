@@ -1,4 +1,4 @@
-package com.codewars.kyu7;
+package kyu7;
 
 /*
    Your task is to add up letters to one letter.
