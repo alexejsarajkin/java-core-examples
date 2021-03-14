@@ -1,8 +1,6 @@
 package com.ocp.examtopics;
 
-import java.util.concurrent.RecursiveTask;
 import java.util.function.IntConsumer;
-import java.util.function.IntFunction;
 import java.util.function.ToIntFunction;
 
 public class Question150 {

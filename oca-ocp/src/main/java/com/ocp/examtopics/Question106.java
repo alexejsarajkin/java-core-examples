@@ -1,6 +1,9 @@
 package com.ocp.examtopics;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class Question106 {
     public static void main(String[] args) {

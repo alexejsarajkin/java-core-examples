@@ -1,9 +1,5 @@
 package com.ocp.examtopics;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.function.Predicate;
-
 public class Question119 {
     public static void main(String[] args) {
 //        List<String> words = Arrays.asList(
