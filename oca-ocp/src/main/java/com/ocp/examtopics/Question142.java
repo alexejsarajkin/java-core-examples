@@ -1,7 +1,6 @@
 package com.ocp.examtopics;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Question142 {
     public static void main(String[] args) {

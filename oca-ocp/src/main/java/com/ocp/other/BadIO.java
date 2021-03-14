@@ -13,9 +13,9 @@ public class BadIO {
 //			System.out.println("b");
 //		} catch (Exception e) {
 //			System.out.println("c");
-//		} 
+//		}
 //	}
-//	
+//
 //	void databaseBlowUp() throws SQLException{
 //		throw new SQLException();
 //	}

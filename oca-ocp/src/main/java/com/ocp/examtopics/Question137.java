@@ -2,8 +2,6 @@ package com.ocp.examtopics;
 
 import java.io.*;
 
-import static org.junit.Assert.assertEquals;
-
 public class Question137 {
     public static void main(String[] args) throws IOException {
         try (FileInputStream fis = new FileInputStream("test.txt");
