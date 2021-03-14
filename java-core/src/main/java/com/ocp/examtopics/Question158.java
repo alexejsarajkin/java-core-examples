@@ -23,7 +23,7 @@ public class Question158 {
 class Student158 {
     String course, name, city;
 
-    public Student158(String name , String course, String city) {
+    public Student158(String name, String course, String city) {
         this.course = course;
         this.name = name;
         this.city = city;
@@ -31,9 +31,9 @@ class Student158 {
 
     @Override
     public String toString() {
-        return  course + ":" +
-                 name + ":" +
-                 city;
+        return course + ":" +
+                name + ":" +
+                city;
     }
 
     public String getCourse() {

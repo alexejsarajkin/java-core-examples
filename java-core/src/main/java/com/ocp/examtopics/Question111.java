@@ -7,7 +7,7 @@ public class Question111 {
         System.out.println(newPrice);
     }
 
-    public double applyDiscount(double price){
+    public double applyDiscount(double price) {
         assert (price > 0);
         return price * 0.5;
     }

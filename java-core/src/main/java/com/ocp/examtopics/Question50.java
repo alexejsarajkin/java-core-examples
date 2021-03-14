@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 public class Question50 {
     public static void main(String[] args) {
         List<Student> stds = Arrays.asList(
-                new Student ("Jessy", "Java ME", "Chicago"),
-                new Student ("Helen", "Java EE", "Houston"),
-                new Student ("Mark", "Java ME", "Chicago"));
+                new Student("Jessy", "Java ME", "Chicago"),
+                new Student("Helen", "Java EE", "Houston"),
+                new Student("Mark", "Java ME", "Chicago"));
         stds.stream()
                 .collect(Collectors.groupingBy(Student::getCourse))
                 .forEach((src, res) -> System.out.println(src));
@@ -26,8 +26,9 @@ class Student {
     }
 
     public String toString() {
-        return course + ":"+name + ":"+city;
+        return course + ":" + name + ":" + city;
     }
+
     public String getCourse() {
         return course;
     }

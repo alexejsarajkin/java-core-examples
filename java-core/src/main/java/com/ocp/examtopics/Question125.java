@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Question125 {
     public static void main(String[] args) {
-        List<Integer> prices = Arrays.asList(3,4,5);
+        List<Integer> prices = Arrays.asList(3, 4, 5);
         prices.stream()
                 .filter(e -> e > 4)
                 .peek(e -> System.out.println("Price " + e))
-                .map(n->n-1)
+                .map(n -> n - 1)
                 .forEach(n -> System.out.println(" New price " + n));
     }
 }

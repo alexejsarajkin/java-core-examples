@@ -30,9 +30,9 @@ class Product {
         this.qty = qty;
     }
 
-    static class ProductFilter{
-        public static boolean isAvailable(Product p){
-            return p.qty >=10;
+    static class ProductFilter {
+        public static boolean isAvailable(Product p) {
+            return p.qty >= 10;
         }
     }
 }

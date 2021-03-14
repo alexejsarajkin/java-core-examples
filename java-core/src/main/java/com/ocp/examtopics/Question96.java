@@ -7,8 +7,8 @@ import java.util.Properties;
 public class Question96 {
     public static void main(String[] args) {
         String URL = "1";
-        String username= "1";
-        String password= "1";
+        String username = "1";
+        String password = "1";
 
         try {
             Properties properties = new Properties();
@@ -18,7 +18,7 @@ public class Question96 {
             if (connection != null) {
                 System.out.println("Connection Established");
             }
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
         }
     }

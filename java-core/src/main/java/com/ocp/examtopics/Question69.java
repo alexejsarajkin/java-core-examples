@@ -2,7 +2,6 @@ package com.ocp.examtopics;
 
 import java.util.function.IntFunction;
 import java.util.function.IntUnaryOperator;
-import java.util.function.UnaryOperator;
 import java.util.stream.IntStream;
 
 public class Question69 {

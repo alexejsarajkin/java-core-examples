@@ -5,8 +5,8 @@ import java.sql.*;
 public class Question106 {
     public static void main(String[] args) {
         String URL = "1";
-        String username= "1";
-        String password= "1";
+        String username = "1";
+        String password = "1";
 
         try {
             Connection connection = DriverManager.getConnection(URL, username, password);

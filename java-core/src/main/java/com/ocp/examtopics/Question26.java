@@ -12,7 +12,7 @@ public class Question26 {
     }
 }
 
- class Customer {
+class Customer {
     private String fName;
     private String lName;
     private static int count;

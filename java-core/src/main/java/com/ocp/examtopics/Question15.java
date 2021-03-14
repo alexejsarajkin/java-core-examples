@@ -7,8 +7,8 @@ public class Question15 {
     public static void main(String[] args) throws Exception {
         try {
             String URL = "1";
-            String username= "1";
-            String password= "1";
+            String username = "1";
+            String password = "1";
             Connection conn = DriverManager.getConnection(URL, username, password);
             Statement st = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
                     ResultSet.CONCUR_UPDATABLE);

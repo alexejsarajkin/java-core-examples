@@ -23,7 +23,7 @@ public class Question132 {
                     Thread.sleep(1000 * ai.incrementAndGet());
                     list.add("X");
                     barrier.await();
-                }catch (Exception e){
+                } catch (Exception e) {
                     System.out.println(e);
                 }
             }

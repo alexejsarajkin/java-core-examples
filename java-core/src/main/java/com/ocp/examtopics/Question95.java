@@ -1,8 +1,9 @@
 package com.ocp.examtopics;
 
 public class Question95 {
-    public void copyFlatFilesToTable(){
+    public void copyFlatFilesToTable() {
     }
+
     public void close() throws Exception {
         throw new RuntimeException();
     }

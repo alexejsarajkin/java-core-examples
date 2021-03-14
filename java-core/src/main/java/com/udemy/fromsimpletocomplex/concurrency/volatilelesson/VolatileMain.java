@@ -5,42 +5,42 @@ import static com.udemy.fromsimpletocomplex.concurrency.threadslesson.ColorSchem
 
 public class VolatileMain {
 
-	private static volatile int counter;
+    private static volatile int counter;
 
-	public static void main(String[] args) {
-		new SimpleWriter().start();
-		new SimpleReader().start();
+    public static void main(String[] args) {
+        new SimpleWriter().start();
+        new SimpleReader().start();
 
-	}
+    }
 
-	private static class SimpleWriter extends Thread {
+    private static class SimpleWriter extends Thread {
 
-		@Override
-		public void run() {
-			int localCounter = counter;
-			for (int i = 0; i < 10; i++) {
-				System.out.println(GREEN + "Writer increments counter " + (localCounter + 1));
-				counter = ++localCounter;
-				try {
-					Thread.sleep(500);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-	}
+        @Override
+        public void run() {
+            int localCounter = counter;
+            for (int i = 0; i < 10; i++) {
+                System.out.println(GREEN + "Writer increments counter " + (localCounter + 1));
+                counter = ++localCounter;
+                try {
+                    Thread.sleep(500);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 
-	private static class SimpleReader extends Thread {
+    private static class SimpleReader extends Thread {
 
-		@Override
-		public void run() {
-			int localCounter = counter;
-			while (localCounter < 10) {
-				if (localCounter != counter) {
-					System.out.println(RED + "Reader reads counter " + counter);
-					localCounter = counter;
-				}
-			}
-		}
-	}
+        @Override
+        public void run() {
+            int localCounter = counter;
+            while (localCounter < 10) {
+                if (localCounter != counter) {
+                    System.out.println(RED + "Reader reads counter " + counter);
+                    localCounter = counter;
+                }
+            }
+        }
+    }
 }

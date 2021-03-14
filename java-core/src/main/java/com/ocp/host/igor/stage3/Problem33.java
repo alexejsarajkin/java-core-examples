@@ -27,8 +27,8 @@ public class Problem33 {
         inventory.stream()
                 .parallel()
                 .reduce((x, y) ->
-						x.price > y.price ? x : y
-				)
+                        x.price > y.price ? x : y
+                )
                 .ifPresent(System.out::println);
     }
 }

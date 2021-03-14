@@ -7,15 +7,16 @@ public class Question83 {
     }
 }
 
-abstract class Operator{
+abstract class Operator {
 //    protected void turnOn();
 //    protected void turnOff();
 
     protected abstract void turnOn();
+
     protected abstract void turnOff();
 }
 
-class EngineOperator extends Operator{
+class EngineOperator extends Operator {
     @Override
     protected void turnOn() {
         System.out.println("ON");
@@ -30,7 +31,7 @@ class EngineOperator extends Operator{
 class Engine {
     Operator m = new EngineOperator();
 
-    public void operate(){
+    public void operate() {
         m.turnOn();
         m.turnOff();
     }

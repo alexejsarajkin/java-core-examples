@@ -22,7 +22,7 @@ public class Question160 {
     }
 }
 
-class Employee{
+class Employee {
     String dept, name;
 
     public Employee(String dept, String name) {
@@ -32,7 +32,7 @@ class Employee{
 
     @Override
     public String toString() {
-        return  dept + ":" + name;
+        return dept + ":" + name;
     }
 
     public String getDept() {

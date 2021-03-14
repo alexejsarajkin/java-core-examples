@@ -1,7 +1,5 @@
 package com.ocp.book.selikoff_boyarsky.practice_tests.chapter17;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;

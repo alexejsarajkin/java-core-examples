@@ -2,33 +2,33 @@ package com.udemy.fromsimpletocomplex.inheritance;
 
 public abstract class FuelAuto extends Auto {
 
-	private int availablePetrol;
-	private int tankVolume;
+    private int availablePetrol;
+    private int tankVolume;
 
-	public FuelAuto(String producer, String model, Engine engine, int availablePetrol, int tankVolume) {
-		super(producer, model, engine);
-		this.availablePetrol = availablePetrol;
-		this.tankVolume = tankVolume;
-	}
+    public FuelAuto(String producer, String model, Engine engine, int availablePetrol, int tankVolume) {
+        super(producer, model, engine);
+        this.availablePetrol = availablePetrol;
+        this.tankVolume = tankVolume;
+    }
 
-	public void fuelUp(int petrolValue) {
-		availablePetrol += petrolValue;
-		System.out.println("Adding fuel");
-	}
+    public void fuelUp(int petrolValue) {
+        availablePetrol += petrolValue;
+        System.out.println("Adding fuel");
+    }
 
-	public int getAvailablePetrol() {
-		return availablePetrol;
-	}
+    public int getAvailablePetrol() {
+        return availablePetrol;
+    }
 
-	public void setAvailablePetrol(int availablePetrol) {
-		this.availablePetrol = availablePetrol;
-	}
+    public void setAvailablePetrol(int availablePetrol) {
+        this.availablePetrol = availablePetrol;
+    }
 
-	public int getTankVolume() {
-		return tankVolume;
-	}
+    public int getTankVolume() {
+        return tankVolume;
+    }
 
-	public void setTankVolume(int tankVolume) {
-		this.tankVolume = tankVolume;
-	}
+    public void setTankVolume(int tankVolume) {
+        this.tankVolume = tankVolume;
+    }
 }

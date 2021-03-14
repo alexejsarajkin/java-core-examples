@@ -5,11 +5,11 @@ public enum Product {
 
     private double price;
 
-    Product(double price){
+    Product(double price) {
         this.price = price;
     }
 
-    public double getPrice(){
+    public double getPrice() {
         return price;
     }
 }

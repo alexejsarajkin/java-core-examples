@@ -6,59 +6,59 @@ import java.util.Objects;
 
 public class Card implements Comparable<Card> {
 
-	public enum Suit {SPADES, HEARTS, CLUBS, DIMONDS}
+    public enum Suit {SPADES, HEARTS, CLUBS, DIMONDS}
 
-	public enum Face {Ace, Deuce, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King}
+    public enum Face {Ace, Deuce, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King}
 
-	private final Suit suit;
+    private final Suit suit;
 
-	public Suit getSuit() {
-		return suit;
-	}
+    public Suit getSuit() {
+        return suit;
+    }
 
-	public Face getFace() {
-		return face;
-	}
+    public Face getFace() {
+        return face;
+    }
 
-	private final Face face;
+    private final Face face;
 
-	public Card(Suit suit, Face face) {
-		this.suit = suit;
-		this.face = face;
-	}
+    public Card(Suit suit, Face face) {
+        this.suit = suit;
+        this.face = face;
+    }
 
-	@Override
-	public int compareTo(Card card) {
-		Face[] values = Face.values();
-		List<Face> faces = Arrays.asList(values);
+    @Override
+    public int compareTo(Card card) {
+        Face[] values = Face.values();
+        List<Face> faces = Arrays.asList(values);
 
-		if (faces.indexOf(this.getFace()) < faces.indexOf(card.getFace())) {
-			return -1;
-		} else if (faces.indexOf(this.getFace()) > faces.indexOf(card.getFace())) {
-			return 1;
-		} else if (faces.indexOf(this.getFace()) == faces.indexOf(card.getFace())) {
-			return String.valueOf(getSuit()).compareTo(String.valueOf(card.getSuit()));
-		}
-		return 0;
-	}
+        if (faces.indexOf(this.getFace()) < faces.indexOf(card.getFace())) {
+            return -1;
+        } else if (faces.indexOf(this.getFace()) > faces.indexOf(card.getFace())) {
+            return 1;
+        } else if (faces.indexOf(this.getFace()) == faces.indexOf(card.getFace())) {
+            return String.valueOf(getSuit()).compareTo(String.valueOf(card.getSuit()));
+        }
+        return 0;
+    }
 
-	@Override
-	public String toString() {
-		return face + " of " + suit;
-	}
+    @Override
+    public String toString() {
+        return face + " of " + suit;
+    }
 
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (o == null || getClass() != o.getClass()) return false;
-		Card card = (Card) o;
-		return suit == card.suit &&
-				face == card.face;
-	}
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Card card = (Card) o;
+        return suit == card.suit &&
+                face == card.face;
+    }
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(suit, face);
-	}
+    @Override
+    public int hashCode() {
+        return Objects.hash(suit, face);
+    }
 
 }

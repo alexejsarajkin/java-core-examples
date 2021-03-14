@@ -7,9 +7,9 @@ import java.nio.file.Paths;
 import java.util.stream.Stream;
 
 public class Problem52 {
-	public static void main(String[] args) throws IOException {
-		Path file = Paths.get("Java.txt");
-		
+    public static void main(String[] args) throws IOException {
+        Path file = Paths.get("Java.txt");
+
 
 //		List<String> fc = Files.list(file);
 //		fc.stream().forEach(x -> System.out.println(x));
@@ -20,7 +20,7 @@ public class Problem52 {
 //		 List<String> fc = readAllLines(file);
 //		fc.stream().forEach(x -> System.out.println(x));
 
-		Stream<String> fc = Files.lines(file);
-		fc.forEach(x -> System.out.println(x));
-	}
+        Stream<String> fc = Files.lines(file);
+        fc.forEach(x -> System.out.println(x));
+    }
 }

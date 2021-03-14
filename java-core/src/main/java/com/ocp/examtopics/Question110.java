@@ -13,13 +13,13 @@ public class Question110 {
 
         System.out.println(res);
 
-        Predicate<String> predicate = str-> str.length() > 5 && str.length() < 10;
+        Predicate<String> predicate = str -> str.length() > 5 && str.length() < 10;
 
         System.out.println(predicate.test("Hello"));
     }
 }
 
-interface LengthValidator{
+interface LengthValidator {
     public boolean checkLength(String str);
 }
 

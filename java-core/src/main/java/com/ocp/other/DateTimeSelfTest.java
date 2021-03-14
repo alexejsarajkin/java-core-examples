@@ -6,7 +6,7 @@ import java.time.Month;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeSelfTest {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 //		ZonedDateTime zd = ZonedDateTime.parse("2020-05-04T08:05:00");
 //		System.out.println(zd.getMonth() + " " + zd.getDayOfMonth());
 
@@ -25,13 +25,13 @@ public class DateTimeSelfTest {
 //		System.out.println(nowZdt.withZoneSameInstant(ZoneId.of("Europe/Berlin")));
 //		System.out.println(ZonedDateTime.ofInstant(nowZdt.toInstant(), ZoneId.of("Europe/Berlin")));
 
-		LocalDateTime now = LocalDateTime.of(2017, 10, 27, 14, 22, 54, 0);
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
-		DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-		System.out.println(now.format(formatter));
-		System.out.println(now.format(formatter1));
+        LocalDateTime now = LocalDateTime.of(2017, 10, 27, 14, 22, 54, 0);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
+        DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        System.out.println(now.format(formatter));
+        System.out.println(now.format(formatter1));
 
-		LocalDate d1 = LocalDate.of(2017, Month.NOVEMBER, 28);
-		System.out.println(LocalDate.ofEpochDay(d1.plusDays(27).toEpochDay()));
-	}
+        LocalDate d1 = LocalDate.of(2017, Month.NOVEMBER, 28);
+        System.out.println(LocalDate.ofEpochDay(d1.plusDays(27).toEpochDay()));
+    }
 }

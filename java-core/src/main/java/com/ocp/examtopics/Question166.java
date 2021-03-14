@@ -15,8 +15,8 @@ class MyThread implements Runnable {
     private int count = 0;
 
     @Override
-    public synchronized void run () {
-        while (count < src.length){
+    public synchronized void run() {
+        while (count < src.length) {
             System.out.println(src[count]);
             count++;
         }

@@ -9,7 +9,7 @@ public class Question148 {
 
     }
 
-    private void run(){
+    private void run() {
         List<String> li = Arrays.asList("Dog", "Cat", "Mouse");
         Animal animal = new Animal();
         animal.setList(li.stream().collect(Collectors.toList()));
@@ -19,11 +19,12 @@ public class Question148 {
 
 class Animal {
     List<String> list = null;
-    public void printValues(){
+
+    public void printValues() {
         System.out.println(getList());
     }
 
-    public List<String> getList(){
+    public List<String> getList() {
         return list;
     }
 

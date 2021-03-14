@@ -16,7 +16,7 @@ public class Question93 {
                 "Oracle DB"
         );
 
-        Predicate<String> val = p->p.contains("J");
+        Predicate<String> val = p -> p.contains("J");
 
         List<String> filtered = list.stream()
                 .filter(x -> x.length() > 3)

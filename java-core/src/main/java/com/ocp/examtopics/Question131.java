@@ -31,18 +31,20 @@ interface R131 extends P {
 }
 
 interface S {
-    public default void method(){
+    public default void method() {
 
     }
 }
 
 interface T {
     public void method1();
+
     public void method2();
 }
 
 interface U {
     public void method1();
+
     public abstract void method2();
 }
 

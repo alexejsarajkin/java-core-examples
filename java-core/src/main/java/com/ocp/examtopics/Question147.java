@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class Question147 {
-    public void loadResourceBundle(){
+    public void loadResourceBundle() {
         ResourceBundle resourceBundle = ResourceBundle.getBundle("Greetings", Locale.US);
 //        System.out.println(resourceBundle.getObject(1));
     }

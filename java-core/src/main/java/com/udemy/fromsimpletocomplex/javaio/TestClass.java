@@ -3,13 +3,13 @@ package com.udemy.fromsimpletocomplex.javaio;
 import java.io.IOException;
 
 public class TestClass {
-	private static final String FILE_NAME = "GradeBook.txt";
-	private static final String FILE_NAME_BYTE = "GradeBookByte.txt";
-	private static final String BINARY_FILE = "Students.bin";
-	private static final String BUFFERED_FILE = "Buffered.bin";
+    private static final String FILE_NAME = "GradeBook.txt";
+    private static final String FILE_NAME_BYTE = "GradeBookByte.txt";
+    private static final String BINARY_FILE = "Students.bin";
+    private static final String BUFFERED_FILE = "Buffered.bin";
 
 
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 //        SortedMap<AverageStudentGrade, Set<SubjectGrade>> grades = TreeMapRunner.createGrades();
 //        Reader reader = new Reader();
 //        Writer writer = new Writer();
@@ -24,16 +24,16 @@ public class TestClass {
 //            System.out.println(b);
 //        }
 
-		byte[] bytes = "hello world".getBytes();
+        byte[] bytes = "hello world".getBytes();
 
-		for (Byte b : bytes
-		) {
-			System.out.println(b);
-		}
+        for (Byte b : bytes
+        ) {
+            System.out.println(b);
+        }
 
-		String s = new String(bytes);
+        String s = new String(bytes);
 
-		System.out.println(s);
+        System.out.println(s);
 
 
 //       try (FileInputStream reader1 = new FileInputStream(FILE_NAME);
@@ -47,5 +47,5 @@ public class TestClass {
 //        }
 
 
-	}
+    }
 }

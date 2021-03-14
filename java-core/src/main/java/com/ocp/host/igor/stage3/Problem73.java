@@ -2,7 +2,6 @@ package com.ocp.host.igor.stage3;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.IntFunction;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 

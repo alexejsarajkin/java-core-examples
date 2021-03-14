@@ -10,7 +10,7 @@ public class Question130 {
                 new Product130("TV", 1000),
                 new Product130("Refrigerator", 2000)
         );
-        Consumer<Product130> raise = e-> e.setPrice(e.getPrice() + 100);
+        Consumer<Product130> raise = e -> e.setPrice(e.getPrice() + 100);
         list.forEach(raise);
         list.stream().forEach(Product130::printVal);
     }
@@ -33,7 +33,7 @@ class Product130 {
         return price;
     }
 
-    public void printVal(){
+    public void printVal() {
         System.out.println(name + " " + price);
     }
 }

@@ -13,7 +13,7 @@ public class Question113 {
 }
 
 class R implements Runnable {
-    public void run () {
+    public void run() {
         System.out.println("Run...");
     }
 }

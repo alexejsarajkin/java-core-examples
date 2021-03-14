@@ -2,15 +2,15 @@ package com.udemy.fromsimpletocomplex.oop;
 
 public enum Size {
 
-	VERY_SMALL("XS"), SMALL("S"), AVERAGE("M"), BIG("L"), VERY_BIG("XL");
+    VERY_SMALL("XS"), SMALL("S"), AVERAGE("M"), BIG("L"), VERY_BIG("XL");
 
-	private String abbreviation;
+    private String abbreviation;
 
-	Size(String abbreviation) {
-		this.abbreviation = abbreviation;
-	}
+    Size(String abbreviation) {
+        this.abbreviation = abbreviation;
+    }
 
-	public String getAbbreviation() {
-		return abbreviation;
-	}
+    public String getAbbreviation() {
+        return abbreviation;
+    }
 }

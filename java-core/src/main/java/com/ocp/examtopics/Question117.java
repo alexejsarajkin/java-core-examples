@@ -7,7 +7,7 @@ public class Question117 {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("", "George", "", "John", "Jim");
         Long val = list.stream()
-                .filter(x->!x.isEmpty())
+                .filter(x -> !x.isEmpty())
                 .count();
 
         System.out.println(val);

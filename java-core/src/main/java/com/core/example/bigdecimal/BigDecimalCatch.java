@@ -3,12 +3,12 @@ package com.core.example.bigdecimal;
 import java.math.BigDecimal;
 
 public class BigDecimalCatch {
-	public static void main(String[] args) {
-		try {
-			new BigDecimal("test");
+    public static void main(String[] args) {
+        try {
+            new BigDecimal("test");
 
-		} catch (NumberFormatException e) {
-			e.printStackTrace();
-		}
-	}
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+    }
 }

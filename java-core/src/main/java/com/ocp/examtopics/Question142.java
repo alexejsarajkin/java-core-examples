@@ -30,8 +30,8 @@ class Block {
     }
 }
 
-class ColorSorted implements Comparator<Block>{
-    public int compare(Block o1, Block o2){
+class ColorSorted implements Comparator<Block> {
+    public int compare(Block o1, Block o2) {
         return o1.color.compareTo(o2.color);
     }
 }

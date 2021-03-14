@@ -3,11 +3,11 @@ package com.core.example.thread.atomic;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Counter {
-	AtomicInteger count = new AtomicInteger();
+    AtomicInteger count = new AtomicInteger();
 
-	public void increment() {
-		count.incrementAndGet();
-	}
+    public void increment() {
+        count.incrementAndGet();
+    }
 
 //  public int count;
 //

@@ -13,7 +13,7 @@ public class Question116 {
         );
 
         vehicles.stream()
-                .sorted((v1, v2)-> Integer.compare(v1.getId(), v2.getId()))
+                .sorted((v1, v2) -> Integer.compare(v1.getId(), v2.getId()))
                 .forEach(System.out::println);
 
         vehicles.stream()
@@ -22,7 +22,7 @@ public class Question116 {
     }
 }
 
-class Vehicle{
+class Vehicle {
     int id;
     String name;
 
@@ -41,7 +41,7 @@ class Vehicle{
 
     @Override
     public String toString() {
-        return  name ;
+        return name;
     }
 }
 

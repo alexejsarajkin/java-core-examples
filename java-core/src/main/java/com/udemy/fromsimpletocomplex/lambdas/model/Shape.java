@@ -4,17 +4,17 @@ import java.util.List;
 
 public interface Shape {
 
-	double calcSquare();
+    double calcSquare();
 
-	static double calcShapesSquare(List<Shape> shapes) {
-		double squareSum = 0;
-		for (Shape shape : shapes) {
-			squareSum = squareSum + shape.calcSquare();
-		}
-		return squareSum;
-	}
+    static double calcShapesSquare(List<Shape> shapes) {
+        double squareSum = 0;
+        for (Shape shape : shapes) {
+            squareSum = squareSum + shape.calcSquare();
+        }
+        return squareSum;
+    }
 
-	default double calcSomething() {
-		return 1;
-	}
+    default double calcSomething() {
+        return 1;
+    }
 }

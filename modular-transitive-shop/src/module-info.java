@@ -1,6 +1,6 @@
 module shop {
     requires
-    transitive
+            transitive
     product;
     exports com.shop;
 }
